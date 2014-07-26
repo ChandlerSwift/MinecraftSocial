@@ -1,6 +1,20 @@
 Installation Instructions: MinecraftSocial
 ==========================================
 
+### Prerequisites: ###
+
+* Web Server with LAMP stack or similar. MinecraftSocial requries MySQL, PHP,
+  and a web server like Apache.
+
+* Please, please, please, get an HTTPS certificate! All the secure coding we
+  can do will be for nothing protecting your users if you transmit their password
+  information in plaintext!
+
+* The use of .htaccess files must be enabled on your Web Server. We use these
+  for denying permission to our included files, and for making our pretty indices.
+
+### Installation: ###
+
 1. Download the code! Either you can download the entire development version
    [here](https://github.com/ChandlerSwift/MinecraftSocial/archive/master.zip),
    or you can go to [MinecraftSocial.ChandlerSwift.com](http://minecraftsocial.chandlerswift.com/download/)
