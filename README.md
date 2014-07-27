@@ -18,4 +18,9 @@ Other benefits include the following:
 * It's secure (based on [phpSecureLogin](http://github.com/peredurabefrog/phpSecureLogin))
 * It's easy (simple to install, only requires LAMP stack)
 
+MinecraftSocial is based on (and incredibly grateful to) the following:
+
+* [Twitter Bootstrap](http://getbootstrap.com) and [jQuery](jquery.com)
+* [phpSecureLogin](http://github.com/peredurabefrog/phpSecureLogin)
+
 I'm happy to receive any suggestions (chandler@chandlerswift.com). Also, development help would be greatly appreciated!
