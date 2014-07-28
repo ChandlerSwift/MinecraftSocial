@@ -17,4 +17,5 @@ To-Do List
   * Registered User Downloads
   * Administrator Downloads
 * Add Server URL to Server Status Bar
-* Allow Custom servers besides localhost
+* ~~Allow Custom servers besides localhost~~
+* Set server status to check at most once every ten seconds? Prevent DDOS'ing?
