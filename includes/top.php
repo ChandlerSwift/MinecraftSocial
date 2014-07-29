@@ -71,19 +71,19 @@ if ($page == "Update Status")
             <?php endif; ?>
           </ul>
           <ul class="nav nav-sidebar">
-            <?php if ($logged == "in") : ?><li<?php
+            <?php if ($logged == "in") : ?><!--<li<?php
 if ($page == "Bulletin Board")
   echo ' class="active"';
-?>><a href="/bulletin-board.php">Bulletin Board</a></li>
+?>><a href="/bulletin-board.php">Bulletin Board</a></li>-->
 			<?php endif; ?>
             <li<?php
 if ($page == "downloads")
   echo ' class="active"';
 ?>><a href="/files/">Files/Downloads</a></li>
-            <li<?php
+            <!--<li<?php
 if ($page == "Announcement Archive")
   echo ' class="active"';
-?>><a href="/ann-arch.php">Announcement Archive</a></li>
+?>><a href="/ann-arch.php">Announcement Archive</a></li>-->
             <li<?php
 if ($page == "chat")
   echo ' class="active"';

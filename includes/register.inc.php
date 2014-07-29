@@ -50,18 +50,18 @@ if (isset($_POST['username'], $_POST['email'], $_POST['p'])) {
 		// Create dummy content for posts
 		$dummy_content = "[no content yet added]" ; 
 		
-		if ($admin_user==1) {
+		if (isset($admin_user) and $admin_user==1) {
 			$usertype="administrator";
-			$admin_user==0;
+			$admin_user=0;
 		} else {
 			$usertype="user";
-			$admin_user==0;
+			$admin_user=0;
 		}
 		
 
         // Insert the new user into the database 
-        if ($insert_stmt = $mysqli->prepare("INSERT INTO members (username, email, first, last, password, salt, usertype) VALUES (?, ?, ?, ?, ?, ?, ?)")) {
-            $insert_stmt->bind_param('sssssss', $username, $email, $first, $last, $password, $random_salt, $usertype);
+        if ($insert_stmt = $mysqli->prepare("INSERT INTO members (username, email, first, last, password, salt, status, usertype) VALUES (?, ?, ?, ?, ?, ?, ?, ?)")) {
+            $insert_stmt->bind_param('ssssssss', $username, $email, $first, $last, $password, $random_salt, $dummy_content, $usertype);
             // Execute the prepared query.
             if (! $insert_stmt->execute()) {
                 header('Location: ../error.php?err=Registration failure: INSERT');

@@ -9,7 +9,7 @@ if (login_check($mysqli) == true) {
 } else {
 	$logged = "out" ;
 }
-
+ include '../includes/config.php';
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -19,7 +19,7 @@ if (login_check($mysqli) == true) {
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Beta Minecraft Chat Engine II</title>
+    <title>Chat (Beta) | <?php echo $sitename ; ?></title>
     
     <link rel="stylesheet" href="style.css" type="text/css" />
     
@@ -99,7 +99,7 @@ if (login_check($mysqli) == true) {
     <div id="page-wrap">
     
         <h2>Welcome to Minecraft Chat!</h2>
-		<h4>BETA | Hosted on www.ChandlerSwift.tk</h4>
+		<h4>BETA | <?php echo $sitename ; ?></h4>
         
         <p id="name-area"></p>
         
