@@ -80,10 +80,10 @@ if ($page == "Bulletin Board")
 if ($page == "downloads")
   echo ' class="active"';
 ?>><a href="/files/">Files/Downloads</a></li>
-            <!--<li<?php
+            <li<?php
 if ($page == "Announcement Archive")
   echo ' class="active"';
-?>><a href="/ann-arch.php">Announcement Archive</a></li>-->
+?>><a href="/announcement-archive.php">Announcement Archive</a></li>
             <li<?php
 if ($page == "chat")
   echo ' class="active"';
