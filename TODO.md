@@ -8,7 +8,7 @@ To-Do List
 * Relative URLs so it doesn't have to be in a top level folder
 * Test on different sites and with different setups
 * Administrator Registration - Add multiple admins (or op users)
-* DB Sanitize Announcements
+* ~~DB Sanitize Announcements~~
 * Chat Upgrades:
   * Remove ping on own posts
   * Save old Chats for download - GZipped in downloads page
@@ -16,7 +16,7 @@ To-Do List
   * Public Downloads
   * Registered User Downloads
   * Administrator Downloads
-* Add Server URL to Server Status Bar
+* Add Server URL to Server Status Bar (Optional)
 * ~~Allow Custom servers besides localhost~~
 * Set server status to check at most once every ten seconds? Prevent DDOS'ing?
 * Remember Me Functionality
@@ -33,5 +33,5 @@ To-Do List
   * Sitebar Settings
   * Edit Links - in Database?
 * Easy-Upgrade Packages - PHP script to determine which version is running and compare differences?
-* Split Installer into separate packages, revise SQL
+* ~~Split Installer into separate packages, revise SQL~~
 

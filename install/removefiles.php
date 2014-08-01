@@ -1,0 +1,9 @@
+<?php
+unlink('index.php');
+unlink('1.php');
+unlink('2.php');
+unlink('3.php');
+unlink('MinecraftSocial.sql');
+unlink('removefiles.php');
+rmdir('../install');
+?>

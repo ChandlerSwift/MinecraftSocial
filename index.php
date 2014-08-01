@@ -1,7 +1,7 @@
 <?php
 if (!file_exists('includes/config.php'))
 {
-header('Location: install.php');
+header('Location: /install/');
 exit;
 }
 

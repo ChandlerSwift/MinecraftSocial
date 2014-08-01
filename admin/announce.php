@@ -38,6 +38,8 @@ if ($_SESSION['usertype'] != 'administrator')
 				<input class='submit' type=\"submit\" value=\"Submit\">
 				</form>" ;
 		} else {
+			$CONTENT = $mysqli->escape_string($CONTENT);
+			$TITLE   = $mysqli->escape_string($TITLE);
 			if ( is_null($FRONT))
 				$FRONT = 0 ;
 			$query = "INSERT INTO announcements (Title, Content, DateTime, Front, Style) VALUES ('" . $TITLE . "', '". $CONTENT . "', '" . date( 'Y-m-d H:i:s' ) . "', '" . $FRONT . "', '" . $STYLE . "')";
