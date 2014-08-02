@@ -77,7 +77,7 @@ if ($page == "Bulletin Board")
 ?>><a href="/bulletin-board.php">Bulletin Board</a></li>-->
 			<?php endif; ?>
             <li<?php
-if ($page == "downloads")
+if ($page == "Downloads")
   echo ' class="active"';
 ?>><a href="/files/">Files/Downloads</a></li>
             <li<?php
@@ -85,7 +85,7 @@ if ($page == "Announcement Archive")
   echo ' class="active"';
 ?>><a href="/announcement-archive.php">Announcement Archive</a></li>
             <li<?php
-if ($page == "chat")
+if ($page == "Chat")
   echo ' class="active"';
 ?>><a href="/chat/">Live Chat</a></li>
             <!--<li><a href="">More navigation</a></li>-->
