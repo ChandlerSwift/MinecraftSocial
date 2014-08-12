@@ -94,3 +94,19 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+/*
+ * Custom Sidebar Styles
+ */
+
+.sidebar-wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+.sidebar-logo, .sidebar-logo-push {
+	height: 4em;
+	text-align: center;
+}
