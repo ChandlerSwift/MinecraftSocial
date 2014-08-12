@@ -71,11 +71,10 @@ if ($page == "Update Status")
             <?php endif; ?>
           </ul>
           <ul class="nav nav-sidebar">
-            <?php if ($logged == "in") : ?><!--<li<?php
+            <li<?php
 if ($page == "Bulletin Board")
   echo ' class="active"';
-?>><a href="/bulletin-board.php">Bulletin Board</a></li>-->
-			<?php endif; ?>
+?>><a href="/bulletin-board/">Bulletin Board</a></li>
             <li<?php
 if ($page == "Downloads")
   echo ' class="active"';
