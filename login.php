@@ -31,6 +31,7 @@ if (login_check($mysqli) == true) {
         }
         ?> 
 		<p>Don't have an account? <a href="register.php">Register Here.</a></p>
+		<p>Don't want to be here? <a href="/">Go Back to Home</a>.</p>
         <input name="email" type="email" class="form-signin-top form-control" placeholder="Email address" autofocus>
         <input name="password" id="password" type="password" class=" form-signin-bottom form-control" placeholder="Password">
         <!--<label class="checkbox">
