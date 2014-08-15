@@ -42,3 +42,4 @@ To-Do List
   * Responsive-width chat so it fits on a phone screen
   * Off-canvas side menu
 * Add IP to server polling (Optional - determined in ADMIN panel
+* Customizable Links on sidebar (Up to 3?)
