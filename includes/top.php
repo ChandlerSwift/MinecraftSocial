@@ -92,7 +92,9 @@ if ($page == "Chat")
           </ul>
 		<hr>
           <ul class="nav nav-sidebar">
-<?php include 'links.php' ; ?>
+			<li><p style="text-align:center;"><br>Links:</p></li>
+			<li><a href="http://minecraft.net/" target="_blank">Official Minecraft Site</a></li>
+			<li><a href="http://minecraft.gamepedia.com" target="_blank">Official Minecraft Wiki</a></li>
           </ul>
 		<hr>
 		<div style="text-align:center;" id="ServerStatus"><b>Server Status:</b><br><span class='label label-warning'>Loading</span></div>
