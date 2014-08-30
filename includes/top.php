@@ -55,6 +55,7 @@ if (login_check($mysqli) == true) { $logged = "in" ; } else { $logged = "out" ; 
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
+		<div class="sidebar-wrap">
           <ul class="nav nav-sidebar">
             <li<?php
 if ($page == "Home")
@@ -92,11 +93,15 @@ if ($page == "Chat")
 		<hr>
           <ul class="nav nav-sidebar">
 			<li><p style="text-align:center;"><br>Links:</p></li>
-            <li><a href="http://minecraft.net/" target="_blank">Official Minecraft Site</a></li>
-            <li><a href="http://minecraft.gamepedia.com" target="_blank">Official Minecraft Wiki</a></li>
+			<li><a href="http://minecraft.net/" target="_blank">Official Minecraft Site</a></li>
+			<li><a href="http://minecraft.gamepedia.com" target="_blank">Official Minecraft Wiki</a></li>
           </ul>
 		<hr>
 		<div style="text-align:center;" id="ServerStatus"><b>Server Status:</b><br><span class='label label-warning'>Loading</span></div>
+		<div class="sidebar-logo-push"></div></div>
+		<div class="sidebar-logo">
+		<a href="http://chandlerswift.github.io/MinecraftSocial"><img src="/images/logo100.png" alt="Powered by MinecraftSocial" /></a>
+		</div>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <!--<h1 class="page-header"><?php // echo $title ; ?></h1>-->

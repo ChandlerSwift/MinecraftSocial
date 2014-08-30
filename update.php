@@ -28,7 +28,7 @@ if (login_check($mysqli) != true) {
 	echo "
 		<form action='/update.php' method='post'>
 		<p style='text-align:center;'><b>Updating for " . $_SESSION['username'] . ":</b><br></p>
-		<textarea title='Put your update here...' name='content' rows='8' cols='125'>".$row['status']."</textarea><br>
+		<textarea title='Put your update here...' name='content' rows='8' cols='75'>".$row['status']."</textarea><br>
 		<input class='submit' type='submit' value='Submit'>
 		</form>" ;
 	} else {
