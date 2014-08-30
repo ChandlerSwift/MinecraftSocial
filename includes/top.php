@@ -92,15 +92,15 @@ if ($page == "Chat")
           </ul>
 		<hr>
           <ul class="nav nav-sidebar">
-			<li><p style="text-align:center;"><br><b>Links:<b></p></li>
-            <li><a href="http://minecraft.net/" target="_blank">Official Minecraft Site</a></li>
-            <li><a href="http://minecraft.gamepedia.com" target="_blank">Official Minecraft Wiki</a></li>
+<?php include 'links.php' ; ?>
           </ul>
 		<hr>
-		<div style="text-align:center;" id="ServerStatus"><b>Server Status:</b><br><span class='label label-warning'>Loading</span></div><hr>
+		<div style="text-align:center;" id="ServerStatus"><b>Server Status:</b><br><span class='label label-warning'>Loading</span></div>
 		<div class="sidebar-logo-push"></div></div>
 		<div class="sidebar-logo">
-		<p>Powered By</p>
-		<a href="http://chandlerswift.github.io/MinecraftSocial"><img src="/images/logo100.png" alt="MinecraftSocial" /></a>
+		<a href="http://chandlerswift.github.io/MinecraftSocial"><img src="/images/logo100.png" alt="Powered by MinecraftSocial" /></a>
 		</div>
         </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <!--<h1 class="page-header"><?php // echo $title ; ?></h1>-->
+<?php include_once 'announcements.php' ?>
