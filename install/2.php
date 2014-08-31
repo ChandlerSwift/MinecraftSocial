@@ -10,7 +10,7 @@
 		Set up Config and Replacement root index files       */
 
 	if (isset($_POST['https'])) {
-		$https = "define('SECURE', TRUE);";
+		$https = "define('SECURE', TRUE); ";
 	} else {
 		$https = "define('SECURE', FALSE);";
 	}
@@ -22,6 +22,11 @@
 	$sitename = "'. $_POST["sitename"]. '";
 	$serverhost = "'. $_POST["serverhost"]. '";
 	'. $https .'
+    $https = "' . $https . '";
+	$link1url = "http://minecraft.net/";
+	$link1title = "Official Minecraft Site";
+	$link2url = "http://minecraft.gamepedia.com/";
+	$link2title = "Official Minecraft Wiki";
 	?>';
 	
 	$index = '<?php

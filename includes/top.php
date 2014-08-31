@@ -1,7 +1,7 @@
 <?php
 include_once 'db_connect.php';
 include_once 'functions.php';
-
+include_once 'config.php' ;
 sec_session_start();
 
 if (login_check($mysqli) == true) { $logged = "in" ; } else { $logged = "out" ; }
@@ -91,10 +91,13 @@ if ($page == "Chat")
             <!--<li><a href="">More navigation</a></li>-->
           </ul>
 		<hr>
+<?php if (!is_null($link1url)) : ?>
           <ul class="nav nav-sidebar">
 			<li><p style="text-align:center;"><br>Links:</p></li>
-			<li><a href="http://minecraft.net/" target="_blank">Official Minecraft Site</a></li>
-			<li><a href="http://minecraft.gamepedia.com" target="_blank">Official Minecraft Wiki</a></li>
+			<li><a href="<?php echo $link1url; ?>" target="_blank"><?php echo $link1title ; ?></a></li>
+<?php if (!is_null($link2url)) : ?>
+			<li><a href="<?php echo $link2url; ?>" target="_blank"><?php echo $link2title ; ?></a></li>
+<?php endif; endif; ?>
           </ul>
 		<hr>
 		<div style="text-align:center;" id="ServerStatus"><b>Server Status:</b><br><span class='label label-warning'>Loading</span></div>
